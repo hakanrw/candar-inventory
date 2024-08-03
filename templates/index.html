@@ -1,0 +1,31 @@
+{% import "macros/head.html" as head -%}
+
+<html>
+    <head lang="{{ lang }}">
+        {%- block title -%}
+            <title>{{ config.title }}</title>
+        {%- endblock title -%}
+
+        {%- block general_meta -%}
+            {{ head::general_meta() }}
+        {%- endblock general_meta -%}
+
+        <meta property="og:image" content="/favicon.png">
+
+        {%- block fonts -%}
+            {{ head::fonts() }}
+        {%- endblock fonts -%}
+
+        {%- block css -%}
+            {{ head::styling() }}
+        {%- endblock css -%}
+
+        {%- block favicon -%}
+            {{ head::favicon() }}
+        {%- endblock favicon -%}
+    </head>
+
+    <body>
+        {{ section.content | safe }}
+    </body>
+</html>
