@@ -60,7 +60,7 @@
             cpu="Xtensa LX6 (2)"
             arch="Xtensa xtensa"
             ram="520 KB"
-            disk="448 KB ROM" 
+            disk="4 MB Flash" 
             amount="2" 
         ) 
     }}
@@ -71,8 +71,8 @@
             model="Raspberry Pi Pico WH" 
             cpu="ARM Cortex-M0+ (2)"
             arch="ARM ARMv6-M"
-            ram="520 KB"
-            disk="448 KB ROM" 
+            ram="264 KB"
+            disk="2 MB Flash" 
             amount="1" 
         ) 
     }}
